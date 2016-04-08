@@ -3,8 +3,8 @@ header
         nav.nav
             a.logo.pointer(href="/" title="CQF")
             - if (status)
-                a.release.transform.pointer
-                    发布
+                a.release.transform.pointer 发布
+                a.save.transform.pointer 保存
             - if (user)
                 a.logout.transform.pointer(href="/user/logout" title="登出") 登出
                 a.name.transform.pointer(href="/game/gameCenter" title="个人中心") #{user}

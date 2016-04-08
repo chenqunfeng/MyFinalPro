@@ -75,7 +75,7 @@ class gameBox extends com.Components
                 success: (data) =>
                     status = data.status
                     if "success" is status
-                        location.href = "/game/editor"
+                        location.href = "/game/freeEditor"
                 error: (err) =>
                     console.log err
 

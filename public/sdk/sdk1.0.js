@@ -136,7 +136,8 @@ cqfSDK = (function(){
         } : function(item) {
             key = item.key_name;
             value = item.key_value;
-            userConfig[key] = value;            
+            type = item.type
+            userConfig[key] = {value:value,type:type};            
         };
 
         configObj.items.map(parse);

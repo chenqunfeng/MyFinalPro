@@ -22,6 +22,8 @@ _UserGame = new Schema
                 }]
             link: {type: String}
         }
+        stage: {type: Array}
+        tw: {type: Array}
     }
     status: {type: String}
     userId: {type: String}

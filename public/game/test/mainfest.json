@@ -1,0 +1,70 @@
+{
+    "items": [
+        {
+            "type": "file",
+            "key_name": "bg",
+            "key_value": "assets/bg.jpg",
+            "key_length": 1,
+            "describe": "背景图片",
+            "key_title": "背景图片",
+            "group": "user",
+            "conditions": {
+                "accept": ".jpg, .jpeg, .png, .gif"
+            },
+            "resource": "",
+            "area": "game"
+        }, {
+            "type": "file",
+            "key_name": "icon",
+            "key_value": "assets/egret_icon.png",
+            "key_length": 1,
+            "describe": "icon",
+            "key_title": "icon",
+            "group": "user",
+            "conditions": {
+                "accept": ".jpg, .jpeg, .png, .gif"
+            },
+            "resource": "",
+            "area": "game"
+        }, {
+            "type": "file",
+            "key_name": "editorIcon",
+            "key_value": "assets/editorIcon.png",
+            "key_length": 1,
+            "describe": "editorIcon",
+            "key_title": "editorIcon",
+            "group": "user",
+            "conditions": {
+                "accept": ".jpg, .jpeg, .png, .gif"
+            },
+            "resource": "",
+            "area": "game"
+        }, {
+            "type": "code",
+            "key_name": "stageCode",
+            "key_value": "window.stage = this;",
+            "key_length": 1,
+            "describe": "icon",
+            "key_title": "icon",
+            "group": "user",
+            "conditions": {
+                "accept": ""
+            },
+            "resource": "",
+            "area": "game"
+        }, {
+            "type": "code",
+            "key_name": "loadedCode",
+            "key_value": "window.gameOnloaded && window.gameOnloaded();",
+            "key_length": 1,
+            "describe": "icon",
+            "key_title": "icon",
+            "group": "user",
+            "conditions": {
+                "accept": ""
+            },
+            "resource": "",
+            "area": "game"
+        }
+    ]
+}

@@ -51,6 +51,7 @@ app.use(express.static(path.join(__dirname, 'public')))
 # //这是一个十分逗逼的做法
 app.use(express.static(path.join(__dirname, 'public/game/magician/')))
 app.use(express.static(path.join(__dirname, 'public/game/bird/')))
+app.use(express.static(path.join(__dirname, 'public/game/test/')))
 
 
 

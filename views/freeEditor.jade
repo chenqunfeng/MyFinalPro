@@ -1,0 +1,11 @@
+extends layout
+
+block cssBlock
+    link(rel='stylesheet', href='/dist/assets/css/freeEditor.min.css')
+block content
+
+    include navBar
+    div.createGameBox
+    
+block jsBlock
+    script(src='/dist/assets/js/freeEditor.min.js')
