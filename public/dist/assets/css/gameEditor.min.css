@@ -1,0 +1,61 @@
+body {
+  background-image: url("../img/backgroundImg.jpg");
+  background-repeat: repeat-x, repeat-y;
+}
+.createGameBox {
+  width: 1000px;
+  margin: 0 auto;
+  padding-top: 80px;
+}
+.createGameBox .previewWin,
+.createGameBox .gameElement {
+  float: left;
+  border-radius: 6px;
+}
+.createGameBox .previewWin {
+  width: 320px;
+  height: 504px;
+  background-image: url("../img/iphone_tit.jpg");
+  background-repeat: no-repeat;
+  padding: 12px;
+  padding-top: 44px;
+  background-color: #000;
+}
+.createGameBox .gameElement {
+  background-color: #4b5866;
+  width: 610px;
+  padding: 28px 12px;
+  margin-left: 20px;
+}
+.createGameBox .gameElement .gameEle {
+  float: left;
+  width: 80px;
+  height: 120px;
+  margin: 0 10px;
+  position: relative;
+}
+.createGameBox .gameElement .gameEle:hover > .exChange {
+  height: 120px;
+}
+.createGameBox .gameElement .gameEle .gameEleInner {
+  width: 80px;
+  height: 80px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.createGameBox .gameElement .gameEle .gameEleTitle {
+  text-align: center;
+  margin-top: 10px;
+  color: #999;
+}
+.createGameBox .gameElement .gameEle .exChange {
+  width: 80px;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-position: center center;
+  background-image: url("../img/editorIcon.png");
+  background-color: rgba(0, 0, 0, 0.44);
+  background-repeat: no-repeat;
+}

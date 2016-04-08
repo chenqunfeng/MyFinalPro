@@ -1,0 +1,104 @@
+.modelBox {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.modelBox .loginBox,
+.modelBox .registerBox {
+  width: 360px;
+  height: 520px;
+  padding: 125px 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background-image: url("../img/backgroundImg.jpg");
+}
+.modelBox .loginBox .formValidGroup,
+.modelBox .registerBox .formValidGroup {
+  margin-bottom: 10px;
+}
+.modelBox .loginBox .formValidGroup:before,
+.modelBox .registerBox .formValidGroup:before {
+  content: attr(data-attr);
+  display: block;
+  position: absolute;
+  font-size: 13px;
+  height: 20px;
+  bottom: -17px;
+  margin-top: -1px;
+  background-color: #fff;
+  color: red;
+  font-weight: 600;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+.modelBox .loginBox input,
+.modelBox .registerBox input,
+.modelBox .loginBox button,
+.modelBox .registerBox button {
+  outline: none;
+  border: none;
+}
+.modelBox .loginBox input,
+.modelBox .registerBox input {
+  width: 300px;
+  height: 40px;
+  padding: 5px 10px;
+  margin: 5px 0;
+  border: 1px solid #82a096;
+  border-radius: 3px;
+  font-size: 14px;
+  color: #333;
+  transition: all 0.2s ease-out;
+}
+.modelBox .loginBox input:hover,
+.modelBox .registerBox input:hover {
+  border-color: #f4d345;
+}
+.modelBox .loginBox input:focus,
+.modelBox .registerBox input:focus {
+  border-color: #f4d345;
+}
+.modelBox .loginBox .title,
+.modelBox .registerBox .title {
+  color: #2D5700;
+  font-weight: 400;
+  font-size: 27px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+.modelBox .loginBox .register,
+.modelBox .registerBox .register,
+.modelBox .loginBox .login,
+.modelBox .registerBox .login {
+  display: block;
+  margin: auto;
+  width: 300px;
+  height: 36px;
+  color: #fff;
+  background-color: #2D5700;
+  font-size: 15px;
+  border-radius: 3px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.modelBox .loginBox .register:hover,
+.modelBox .registerBox .register:hover,
+.modelBox .loginBox .login:hover,
+.modelBox .registerBox .login:hover {
+  background-color: #54940F;
+}
+.modelBox .loginBox .toRegister,
+.modelBox .registerBox .toRegister,
+.modelBox .loginBox .toLogin,
+.modelBox .registerBox .toLogin {
+  color: #2D5700;
+  display: block;
+  text-align: center;
+}

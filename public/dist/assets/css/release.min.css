@@ -1,0 +1,33 @@
+.innerRoll {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.innerRoll .previewerContainer {
+  width: 50%;
+  padding: 24px 0px;
+  float: left;
+  position: absolute;
+  left: 0%;
+}
+.innerRoll .gameInfoContainer {
+  left: 50%;
+}
+.innerRoll .releaseSuccess {
+  left: 100%;
+}
+.innerRoll .releaseSuccess,
+.innerRoll .gameInfoContainer {
+  width: 50%;
+  height: 100%;
+  float: left;
+  position: absolute;
+}
+.innerRoll .releaseSuccess .gameCenter,
+.innerRoll .gameInfoContainer .gameCenter,
+.innerRoll .releaseSuccess .editorGame,
+.innerRoll .gameInfoContainer .editorGame {
+  width: 100px;
+  margin-top: 500px;
+  margin-left: 260px;
+}

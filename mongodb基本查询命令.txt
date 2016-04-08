@@ -1,0 +1,18 @@
+开启mongodb命令
+# mongod -dbpath "路径"
+启动mongodb命令
+# mongo
+查看所有数据库命令
+# show tables
+使用某一个数据库
+# use 数据库名字
+
+以下操作需要在使用# use 数据库名字
+删除当前数据库
+# db.dropDatabase()
+查看数据库下的所有表
+# show tables
+查看数据库下某张表的数据
+# db.usercollection.find()
+删除数据库下的某张表
+# db.usercollection.drop()

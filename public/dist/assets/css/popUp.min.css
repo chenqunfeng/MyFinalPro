@@ -1,0 +1,32 @@
+#popUpWin {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.45);
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  z-index: 100;
+  top: 0;
+  left: 0;
+}
+#popUpWin .popContainer {
+  width: 900px;
+  height: 560px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 12px;
+  position: relative;
+}
+#popUpWin .popContainer .popContent {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}

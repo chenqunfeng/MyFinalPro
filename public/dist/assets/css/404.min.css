@@ -1,0 +1,56 @@
+#error404 {
+  height: 100%;
+  width: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #259259;
+}
+#error404 .errorContain {
+  width: 540px;
+  margin: 0 auto;
+}
+#error404 .errorContain .errorImg {
+  background-image: url(../img/404mogu.png);
+  background-size: cover;
+  width: 290px;
+  height: 217px;
+  border: none;
+  float: left;
+}
+#error404 .errorContain .errorFont {
+  background-size: cover;
+  border: none;
+  float: left;
+}
+#error404 .errorContain .errorFont1 {
+  background-image: url(../img/404font1.png);
+  width: 128px;
+  height: 140px;
+}
+#error404 .errorContain .errorFont2 {
+  background-image: url(../img/404font2.png);
+  width: 537px;
+  height: 120px;
+}
+#error404 .errorContain .tips {
+  float: left;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+}
+#error404 .errorContain .returnIndex {
+  float: left;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 10px;
+  z-index: 11;
+}

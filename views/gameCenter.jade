@@ -1,0 +1,15 @@
+extends layout
+
+block cssBlock
+    link(rel='stylesheet', href='/dist/assets/css/game.min.css')
+
+block content
+
+    include navBar
+
+    div.proGameList.borderBox
+        div.headerDes 选择一个模板开始创建
+block jsBlock
+    script(src='/dist/assets/js/game.min.js')
+
+

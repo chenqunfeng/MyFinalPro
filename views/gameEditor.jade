@@ -1,0 +1,13 @@
+extends layout
+
+block cssBlock
+    link(rel='stylesheet', href='/dist/assets/css/gameEditor.min.css')
+
+block content
+
+    include navBar
+
+    div.createGameBox
+    
+block jsBlock
+    script(src='/dist/assets/js/gameEditor.min.js')

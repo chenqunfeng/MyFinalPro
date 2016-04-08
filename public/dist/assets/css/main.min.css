@@ -1,0 +1,450 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "微软雅黑" !important;
+  font-size: 14px;
+  outline: none;
+  border: none;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.borderBox {
+  box-sizing: border-box;
+}
+.contentBox {
+  box-sizing: content-box;
+}
+.borderBox,
+.contentBox {
+  position: relative;
+}
+.borderBox:after,
+.contentBox:after {
+  content: "";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  font-size: 0;
+}
+.transform {
+  transition: all 0.2s ease-out;
+}
+.pointer {
+  cursor: pointer;
+}
+.notAllowed {
+  cursor: not-allowed;
+}
+.lineGrandient {
+  border: none;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(255, 0, 0, 0) 0%, #84a298 28%, #83a197 50%, #84a298 78%, transparent 100%);
+}
+.show {
+  display: block;
+}
+.hide {
+  display: none;
+}
+.normalTransition {
+  transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+}
+.fadeIn {
+  transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  -moz-transform: scale(1, 1);
+  -webkit-transform: scale(1, 1);
+  -o-transform: scale(1, 1);
+}
+.fadeOut {
+  transform: scale(0, 0);
+  -ms-transform: scale(0, 0);
+  -moz-transform: scale(0, 0);
+  -webkit-transform: scale(0, 0);
+  -o-transform: scale(0, 0);
+}
+.realFadeIn {
+  opacity: 1;
+  z-index: 100!important;
+}
+.realFadeOut {
+  opacity: 0;
+  z-index: -1 !important;
+}
+.linkButton {
+  color: #259259;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.button {
+  color: #fff;
+  background-color: #259259;
+  cursor: pointer;
+  border-radius: 6px;
+  padding: 6px 12px;
+  outline: none;
+  border: none;
+}
+.button:hover {
+  color: #259259;
+  background-color: #fff;
+}
+.reversalButton {
+  color: #259259;
+  background-color: #fff;
+  cursor: pointer;
+  border-radius: 6px;
+  padding: 6px 12px;
+  outline: none;
+  border: none;
+}
+.reversalButton:hover {
+  color: #fff;
+  background-color: #259259;
+}
+.littleBlock {
+  display: inline-block;
+  background-color: #5d6167;
+  padding: 2px 6px;
+}
+.closeBtn {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: -35px;
+  right: -35px;
+  cursor: pointer;
+}
+.closeBtn:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: -3px;
+  top: 50%;
+  margin-top: -1px;
+  width: 30px;
+  height: 2px;
+  background-color: #fff;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.closeBtn:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: -3px;
+  top: 50%;
+  margin-top: -1px;
+  width: 30px;
+  height: 2px;
+  background-color: #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+header {
+  width: 100%;
+  height: 40px;
+  background-color: #31363e;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+header .header {
+  width: 1000px;
+  margin: 0 auto;
+}
+header .header .nav:after {
+  content: "";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  font-size: 0;
+}
+header .header .nav a {
+  color: #EEE;
+  padding: 9px 20px;
+  float: right;
+  font-size: 16px;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+header .header .nav .logo {
+  background-image: url("../img/logo.png");
+  background-size: 100% 100%;
+  float: left;
+  width: 20px;
+  height: 20px;
+}
+header .header .nav .release {
+  float: left;
+}
+header .header .nav .transform:hover {
+  color: #85FF00;
+}
+.swiperContainer {
+  width: 100%;
+  height: 100%;
+}
+.swiperContainer .swiperWrapper {
+  width: 100%;
+  height: 100%;
+}
+.swiperContainer .swiperWrapper .swiperSlide {
+  width: 100%;
+  height: 100%;
+  background-size: 100% 100%;
+}
+.swiperContainer .swiperWrapper .page1 {
+  background-image: url("../img/index1.jpg");
+}
+.swiperContainer .swiperWrapper .page2 {
+  background-image: url("../img/index6.jpg");
+}
+.swiperContainer .swiperWrapper .page3 {
+  background-image: url("../img/index5.jpg");
+}
+.swiperContainer .swiperWrapper .mask {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.66);
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.modelBox {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.modelBox .loginBox,
+.modelBox .registerBox {
+  width: 360px;
+  height: 520px;
+  padding: 125px 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background-image: url("../img/backgroundImg.jpg");
+}
+.modelBox .loginBox .formValidGroup,
+.modelBox .registerBox .formValidGroup {
+  margin-bottom: 10px;
+}
+.modelBox .loginBox .formValidGroup:before,
+.modelBox .registerBox .formValidGroup:before {
+  content: attr(data-attr);
+  display: block;
+  position: absolute;
+  font-size: 13px;
+  height: 20px;
+  bottom: -17px;
+  margin-top: -1px;
+  background-color: #fff;
+  color: red;
+  font-weight: 600;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+.modelBox .loginBox input,
+.modelBox .registerBox input,
+.modelBox .loginBox button,
+.modelBox .registerBox button {
+  outline: none;
+  border: none;
+}
+.modelBox .loginBox input,
+.modelBox .registerBox input {
+  width: 300px;
+  height: 40px;
+  padding: 5px 10px;
+  margin: 5px 0;
+  border: 1px solid #82a096;
+  border-radius: 3px;
+  font-size: 14px;
+  color: #333;
+  transition: all 0.2s ease-out;
+}
+.modelBox .loginBox input:hover,
+.modelBox .registerBox input:hover {
+  border-color: #f4d345;
+}
+.modelBox .loginBox input:focus,
+.modelBox .registerBox input:focus {
+  border-color: #f4d345;
+}
+.modelBox .loginBox .title,
+.modelBox .registerBox .title {
+  color: #2D5700;
+  font-weight: 400;
+  font-size: 27px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+.modelBox .loginBox .register,
+.modelBox .registerBox .register,
+.modelBox .loginBox .login,
+.modelBox .registerBox .login {
+  display: block;
+  margin: auto;
+  width: 300px;
+  height: 36px;
+  color: #fff;
+  background-color: #2D5700;
+  font-size: 15px;
+  border-radius: 3px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.modelBox .loginBox .register:hover,
+.modelBox .registerBox .register:hover,
+.modelBox .loginBox .login:hover,
+.modelBox .registerBox .login:hover {
+  background-color: #54940F;
+}
+.modelBox .loginBox .toRegister,
+.modelBox .registerBox .toRegister,
+.modelBox .loginBox .toLogin,
+.modelBox .registerBox .toLogin {
+  color: #2D5700;
+  display: block;
+  text-align: center;
+}
+#error404 {
+  height: 100%;
+  width: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #259259;
+}
+#error404 .errorContain {
+  width: 540px;
+  margin: 0 auto;
+}
+#error404 .errorContain .errorImg {
+  background-image: url(../img/404mogu.png);
+  background-size: cover;
+  width: 290px;
+  height: 217px;
+  border: none;
+  float: left;
+}
+#error404 .errorContain .errorFont {
+  background-size: cover;
+  border: none;
+  float: left;
+}
+#error404 .errorContain .errorFont1 {
+  background-image: url(../img/404font1.png);
+  width: 128px;
+  height: 140px;
+}
+#error404 .errorContain .errorFont2 {
+  background-image: url(../img/404font2.png);
+  width: 537px;
+  height: 120px;
+}
+#error404 .errorContain .tips {
+  float: left;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+}
+#error404 .errorContain .returnIndex {
+  float: left;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 10px;
+  z-index: 11;
+}
+#popUpWin {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.45);
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  z-index: 100;
+  top: 0;
+  left: 0;
+}
+#popUpWin .popContainer {
+  width: 900px;
+  height: 560px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 12px;
+  position: relative;
+}
+#popUpWin .popContainer .popContent {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.previewer {
+  width: 320px;
+  height: 504px;
+}
+.innerRoll {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.innerRoll .previewerContainer {
+  width: 50%;
+  padding: 24px 0px;
+  float: left;
+  position: absolute;
+  left: 0%;
+}
+.innerRoll .gameInfoContainer {
+  left: 50%;
+}
+.innerRoll .releaseSuccess {
+  left: 100%;
+}
+.innerRoll .releaseSuccess,
+.innerRoll .gameInfoContainer {
+  width: 50%;
+  height: 100%;
+  float: left;
+  position: absolute;
+}
+.innerRoll .releaseSuccess .gameCenter,
+.innerRoll .gameInfoContainer .gameCenter,
+.innerRoll .releaseSuccess .editorGame,
+.innerRoll .gameInfoContainer .editorGame {
+  width: 100px;
+  margin-top: 500px;
+  margin-left: 260px;
+}

@@ -1,0 +1,66 @@
+﻿<!doctype html>
+<html>
+<head>
+    <title>别碰钉子！</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="game.css">
+    <script type="text/javascript" src="http://file.tuyoumi.com/ext/tuyoumi-sdk/testsdk.js"></script>
+</head>
+<body>
+    <div class="area">
+        <div id="over" class="state">
+            <div class="over-ground">
+                <div class="title">
+                    <p>你这次成绩</p>
+                    <h1 class="score">12</h1>
+                    <p class="rank">排在全国1341名</p>
+                    <p class="bull-shit">靠！你真是牛逼爆了！</p>
+                </div>
+                <div class="buttons">
+                    <div class="again">再来一次</div>
+                    <div class="show-off">炫耀一下</div>
+                    <div class="choujiang" id="choujiangUrl">去抽奖咯</div>
+                </div>
+            </div>
+        </div>
+        <div id="share" class="state">
+            <img src="assets/share.png" alt="分享" class="share-logo">
+            <div class="share-text">
+                <p>我的虐心小鸟得了<span class="count">0</span>分！!</p>
+                <p>果断来挑战我的鸟啊！</p>
+            </div>
+            <div class="back">返回</div>
+        </div>
+
+        <div class="up-ground ground"></div>
+        <div class="down-ground ground"></div>
+
+        <div class="left-wall wall">
+            <div class="angle angle-on-left"></div>
+            <div class="angle angle-on-left"></div>
+            <div class="angle angle-on-left"></div>
+            <div class="angle angle-on-left"></div>
+            <div class="angle angle-on-left"></div>
+            <div class="angle angle-on-left"></div>
+            <div class="angle angle-on-left"></div>
+            <div class="angle angle-on-left"></div>
+        </div>
+        <div class="right-wall wall"></div>
+        <div class="circle">
+            <h1 class="name">不要碰到钉子</h1>
+            <div class="instruction">
+                轻触让小鸟跳跃
+            </div>
+            <h2 class="highest-score"><span id="score-text">最高成绩</span>：<span id="highest-score"></span></h2>
+            <div id="score" class="score"></div>
+        </div>
+        <div id="debug"></div>
+        <img class="candy">
+        <img class="bird">
+        <img class="dead-bird hide" src="assets/dead-bird.png">
+        <img class="bird-right hide" src="assets/bird-left.png">
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>

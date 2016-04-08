@@ -1,0 +1,14 @@
+header
+    div.header
+        nav.nav
+            a.logo.pointer(href="/" title="CQF")
+            - if (status)
+                a.release.transform.pointer
+                    发布
+            - if (user)
+                a.logout.transform.pointer(href="/user/logout" title="登出") 登出
+                a.name.transform.pointer(href="/game/gameCenter" title="个人中心") #{user}
+                a.gameCenter.transform.pointer(href="/game" title="个人中心") 新建游戏
+            - else
+                a.registing.transform.pointer(title="注册") 注册
+                a.loging.transform.pointer(title="登陆") 登陆

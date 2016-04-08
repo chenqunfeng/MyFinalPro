@@ -1,0 +1,76 @@
+body{
+    background-image: url("../img/backgroundImg.jpg");
+    background-repeat: repeat-x,repeat-y;
+}
+.gamePre{
+    width: 320px;
+    height: 504px;
+}
+.proGameList{
+    padding: 0px 10px;
+    padding-top: 80px;
+    width: 1000px;
+    margin: 0 auto;
+    .headerDes{
+        margin: 10px;
+        color: #666;
+        &:after{
+            content: "";
+            display: block;
+            height: 1px;
+            background-color: #666;
+        }
+    }
+    .proGameBox{
+        width: 198px;
+        height: 330px;
+        float: left;
+        margin: 10px;
+        background-color: black;
+        position: relative;
+        .gameBoxCover{
+            width: 100%;
+            height: 100%;
+            background-image: url(http://www.beetobees.com/Uploads/Picture/2016-01-14/569707421ca6a.png)
+        }
+        &:hover>.gameBoxDetail{
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+        .gameBoxDetail{
+            width: 100%;
+            height: 0%;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            background-color: transparent;
+            overflow: hidden;
+            color: #fff;
+            padding-top: 100px;
+            .gameDetail{
+                position: relative;
+                margin-bottom: 6px;
+                .gameTitle{
+                    display: inline-block;
+                    width: 120px;
+                }
+                &:after{
+                    content: "";
+                    border-bottom: 1px solid white;
+                    position: absolute;
+                    left: 0px;
+                    bottom: -5px;
+                    width: 100%;
+                }
+            }
+            .kind{
+                margin: 10px 0px;
+            }
+            .gameEditor{
+                width: 100%;
+            }
+        }
+    }
+}

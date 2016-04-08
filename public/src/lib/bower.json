@@ -1,0 +1,21 @@
+{
+  "name": "CQF",
+  "description": "Final Design",
+  "main": "",
+  "moduleType": [],
+  "authors": [
+    "cqf"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4"
+  }
+}

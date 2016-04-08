@@ -1,0 +1,118 @@
+{
+    "items": [
+        {
+            "type": "text",
+            "key_name": "score_text",
+            "key_value": "最高纪录",
+            "key_length": 1,
+            "key_title": "最高记录",
+            "describe": "显示最高记录的提示文字的时候出现",
+            "group": "user",
+            "conditions": {
+                "size": 10
+            },
+            "resource": "",
+            "area": "prototype"
+        }, {
+            "type": "text",
+            "key_name": "game_name",
+            "key_value": "不要碰到钉子",
+            "key_length": 1,
+            "describe": "游戏的名称，显示在游戏开始的时候",
+            "key_title": "游戏的名称",
+            "group": "user",
+            "conditions": {
+                "size": 10
+            },
+            "resource": "",
+            "area": "game"
+        }, {
+            "type": "text",
+            "key_name": "prompt",
+            "key_value": "轻触让小鸟跳跃",
+            "key_length": 1,
+            "describe": "提示游戏是怎么玩的",
+            "key_title": "游戏提示语",
+            "group": "user",
+            "conditions": {
+                "size": 20
+            },
+            "resource": "",
+            "area": "game"
+        }, {
+            "type": "file",
+            "key_name": "bird_to_right",
+            "key_value": "assets/bird.png",
+            "key_length": 1,
+            "describe": "往右移动的时候的图片",
+            "key_title": "往右飞",
+            "group": "user",
+            "conditions": {
+                "accept": ".jpg, .jpeg, .png, .gif"
+            },
+            "resource": "",
+            "area": "game"
+        }, {
+            "type": "file",
+            "key_name": "bird_to_left",
+            "key_value": "assets/bird-left.png",
+            "key_length": 1,
+            "describe": "往左移动的时候的图片",
+            "key_title": "往左飞",
+            "group": "user",
+            "conditions": {
+                "accept": ".jpg, .jpeg, .png, .gif"
+            },
+            "resource": "",
+            "area": "game"
+        }, {
+            "type": "file",
+            "key_name": "bird_die",
+            "key_value": "assets/dead-bird.png",
+            "key_length": 1,
+            "describe": "死的时候的图片",
+            "key_title": "死翘翘",
+            "group": "user",
+            "conditions": {
+                "accept": ".jpg, .jpeg, .png, .gif"
+            },
+            "resource": "",
+            "area": "game"
+        }, {
+            "type": "file",
+            "key_name": "candy",
+            "key_value": "assets/candy.png",
+            "key_length": 1,
+            "describe": "吃掉可以得分的物体",
+            "key_title": "吃的",
+            "group": "user",
+            "conditions": {
+                "accept": ".jpg, .jpeg, .png, .gif"
+            },
+            "resource": "",
+            "area": "game"
+        }, {
+            "type": "color",
+            "key_name": "bg_color",
+            "key_value": "#3d6280",
+            "key_length": 1,
+            "describe": "游戏运行的时候的大背景颜色",
+            "key_title": "背景色",
+            "group": "user",
+            "conditions": "",
+            "resource": "",
+            "area": "game"
+        }, {
+            "type": "color",
+            "key_name": "wall_color",
+            "key_value": "#76B1D8",
+            "key_length": 1,
+            "describe": "游戏运行的时候的墙和钉子颜色",
+            "key_title": "墙的色",
+            "group": "user",
+            "conditions": "",
+            "resource": "",
+            "area": "game"
+        }
+    ]
+}
